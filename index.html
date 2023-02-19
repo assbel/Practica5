@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+<style>
+body{background:hsla(0, 100%, 87%, 0.336);
+    margin:0
+}
+.form{
+    width:640px;
+    height:1300px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:Courier, "Lucida Console", monospace;
+    position:relative
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#000000;
+    border-bottom:3px solid #78788c
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#000000
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    border-radius: 10%;
+    transition:all .3s
+}
+button:hover{
+    background:#db62d3;
+    color:#fff
+}
+#caja{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+span{
+    margin:0 5px 0 15px
+}
+
+</style>
+  </head>
+  <body>
+    <form class="form">
+        <h2>Felicidades!!</h2>
+        
+        <fieldset>
+            <legend>Sexo</legend>
+            <div>
+              <input type="radio" id="sex1" name="sexo" value="hombre" />
+              <label for="sex1">Hombre</label>
+        
+              <input type="radio" id="sex2" name="sexo" value="mujer" />
+              <label for="sex2">Mujer</label>
+            </div>
+          </fieldset>
+        <p type="Nombre:"><input type="text" id="name" name="name" required
+          minlength="4" maxlength="50" size="10" placeholder="Escribe tu nombre completo"></input></p>
+        <p type="Email:"><input placeholder="Email para que te contactemos.."></input></p>
+        <fieldset>
+            <legend>Quiero Recibir Informacion</legend>
+        
+            <div>
+              <input type="checkbox" id="si" name="Si" checked>
+              <label for="si">Si</label>
+            </div>
+        </fieldset>
+        <p type="Madre:"><input type="text" id="name" name="name" required
+          minlength="4" maxlength="50" size="10" placeholder="Apellido materno de tu madre..."></input></p>
+        <p type="NSS:"><input type="text" id="name" name="name" required
+          minlength="4" maxlength="50" size="10" placeholder="Escribe tu NSS aquí.."></input></p>
+        <p type="Mascota:"><input placeholder="El nombre de tu primer mascota.."></input></p>
+        <p type="Color natural de cabello:"><input placeholder="Cual es el color sin tinte.."></input></p>
+        
+        <label for="city">Ciudad</label> <br/>
+        <select id="city" name="city">
+         <option value="" selected="selected">- selecciona -</option>
+         <option value="orizaba">Orizaba</option>
+         <option value="iztac">Iztac</option>
+         <option value="cordoba">Cordoba</option>
+          <option value="rio blanco">Rio Blanco</option>
+            </select>
+        <p type="Dieccion:"><input placeholder="Escribe tu direccion aquí.."></input></p>
+        
+         <label for="pin">Escribe los primeros 4 digitos que se te vengan a la mente:</label>
+
+        <input type="number" id="tentacles" name="tentacles"
+          min="0000" max="9999">
+
+        <p type="Random:"><input placeholder="Escribe los primeros 4 digitos que se te vengan a la mente.."></input></p>
+        <label for="start">Fecha de nacimiento:</label>
+
+        <input type="date" id="bday" name="nacimiento"
+         value="1999-01-01"
+           min="1950-01-01" max="2023-12-31">
+        
+        <fieldset>
+            <legend>Declaro haber leído y aceptar las condiciones
+                generales del programa y la normativa sobre protección de datos</legend>
+        
+            <div>
+              <input type="checkbox" id="si" name="Si" >
+              <label for="si">Si</label>
+            </div>
+        </fieldset>
+        <button type="submit" formmethod="get" onclick="">Enviar</button>
+        
+      </form>
+  </body>
+</html>
